@@ -55,10 +55,34 @@ body {
     transition: 1s;
 }
 
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .images-container img {
     height: 48.8rem;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@keyframes anima {
+    from {
+        opacity: 0;
+        border-radius: 75%;
+        width: 0%;
+    }
+    50% {
+        opacity: 0.5;
+        border-radius: 50%;
+        width: 50%;
+    }
+    to {
+        opacity: 1;
+        border-radius: 10px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 991px) {
